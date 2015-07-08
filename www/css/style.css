@@ -1,1 +1,23 @@
 /* Empty. Add your own CSS if you like */
+
+
+.display{
+  font-size: 30px;
+  margin: 10px;
+  text-align: right;
+  color: white;
+}
+
+.center{
+  width: 100%;
+  padding-top: 5px;
+  text-align: center;
+}
+
+body{
+  background-color: #222222;
+}
+
+.scroll-content{
+  background-color: black;
+}

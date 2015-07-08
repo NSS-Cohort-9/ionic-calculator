@@ -25,10 +25,58 @@
 
     <ion-pane>
       <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
+        <h1 class="title">My Calc</h1>
       </ion-header-bar>
       <ion-content>
-      <h1>hello</h1>
+      <div class="display">{{display}}</div>
+      <div class="button-bar">
+        <a class="button">x<sup>2</sup></a>
+        <a class="button button-calm">sin</a>
+        <a class="button button-calm">cos</a>
+        <a class="button button-calm">tan</a>
+      </div>
+      <div class="button-bar">
+        <a class="button">&radic;<span style="text-decoration: overline;"> x</span></a>
+        <a class="button button-calm">sin<sup>-1</sup></a>
+        <a class="button button-calm">cos<sup>-1</sup></a>
+        <a class="button button-calm">tan<sup>-1</sup></a>
+      </div>
+      <div class="button-bar">
+        <a class="button">1</a>
+        <a class="button">2</a>
+        <a  class="button">3</a>
+        <a class="button button-royal">&div;</a>
+      </div>
+      <div class="button-bar">
+        <a class="button">4</a>
+        <a class="button">5</a>
+        <a class="button">6</a>
+        <a  class="button button-royal">&times;</a>
+      </div>
+      <div class="button-bar">
+        <a class="button">7</a>
+        <a class="button">8</a>
+        <a class="button">9</a>
+        <a class="button button-royal">+</a>
+      </div>
+      <div class="button-bar">
+        <a class="button">0</a>
+        <a class="button"></a>
+        <a class="button">.</a>
+        <a class="button button-royal">-</a>
+      </div>
+      <div class="button-bar">
+        <a class="button button-balanced">clear</a>
+        <a class="button button-energized">=</a>
+      </div>
+    </ion-content>
+    <div class="bar bar-footer bar-positive">
+      <div class="center"><small>&copy; 2015, Z. Ames</small></div>
+    </div>
+
+
+
+
       </ion-content>
     </ion-pane>
   </body>
