@@ -31,44 +31,44 @@
       <ion-content>
       <div class="display">{{display}}</div>
       <div class="button-bar">
-        <a class="button">x<sup>2</sup></a>
-        <a class="button button-calm">sin</a>
-        <a class="button button-calm">cos</a>
-        <a class="button button-calm">tan</a>
+        <a ng-click="square()" class="button">x<sup>2</sup></a>
+        <a ng-click="trig('sin')" class="button button-calm">sin</a>
+        <a ng-click="trig('cos')" class="button button-calm">cos</a>
+        <a ng-click="tanfunc()" class="button button-calm">tan</a>
       </div>
       <div class="button-bar">
-        <a class="button">&radic;<span style="text-decoration: overline;"> x</span></a>
-        <a class="button button-calm">sin<sup>-1</sup></a>
-        <a class="button button-calm">cos<sup>-1</sup></a>
-        <a class="button button-calm">tan<sup>-1</sup></a>
+        <a ng-click="root()" class="button">&radic;<span style="text-decoration: overline;"> x</span></a>
+        <a ng-click="trig('asin')" class="button button-calm">sin<sup>-1</sup></a>
+        <a ng-click="trig('acos')" class="button button-calm">cos<sup>-1</sup></a>
+        <a ng-click="trig('atan')" class="button button-calm">tan<sup>-1</sup></a>
       </div>
       <div class="button-bar">
-        <a class="button">1</a>
-        <a class="button">2</a>
-        <a  class="button">3</a>
-        <a class="button button-royal">&div;</a>
+        <a ng-click="number(1)" class="button">1</a>
+        <a ng-click="number(2)" class="button">2</a>
+        <a ng-click="number(3)" class="button">3</a>
+        <a ng-click="calculate(&quot;/&quot;)" class="button button-royal">&div;</a>
       </div>
       <div class="button-bar">
-        <a class="button">4</a>
-        <a class="button">5</a>
-        <a class="button">6</a>
-        <a  class="button button-royal">&times;</a>
+        <a ng-click="number(4)" class="button">4</a>
+        <a ng-click="number(5)" class="button">5</a>
+        <a ng-click="number(6)" class="button">6</a>
+        <a ng-click="calculate(&quot;*&quot;)" class="button button-royal">&times;</a>
       </div>
       <div class="button-bar">
-        <a class="button">7</a>
-        <a class="button">8</a>
-        <a class="button">9</a>
-        <a class="button button-royal">+</a>
+        <a ng-click="number(7)" class="button">7</a>
+        <a ng-click="number(8)" class="button">8</a>
+        <a ng-click="number(9)" class="button">9</a>
+        <a ng-click="calculate(&quot;+&quot;)" class="button button-royal">+</a>
       </div>
       <div class="button-bar">
-        <a class="button">0</a>
+        <a ng-click="number(0)" class="button">0</a>
         <a class="button"></a>
-        <a class="button">.</a>
-        <a class="button button-royal">-</a>
+        <a ng-click="number(&quot;.&quot;)" class="button">.</a>
+        <a ng-click="calculate(&quot;-&quot;)" class="button button-royal">-</a>
       </div>
       <div class="button-bar">
-        <a class="button button-balanced">clear</a>
-        <a class="button button-energized">=</a>
+        <a ng-click="clearDisplay()" class="button button-balanced">clear</a>
+        <a ng-click="answer()" class="button button-energized">=</a>
       </div>
     </ion-content>
     <div class="bar bar-footer bar-positive">
